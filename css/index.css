@@ -127,7 +127,7 @@ header{
 }
 .submenu{
     display: none;  /* cuando no tendra display none*/
-    width: 300px;
+    width: 150px;
     position: absolute; /* sacarlo del flujo de la pagina*/
     background-color: var(--dark-bg-solid);
     z-index: 3;
@@ -326,4 +326,202 @@ header{
     100%{
         opacity: 1;
     }
+}
+/* SHOP CSS*/
+/* ASIDE */ 
+.shop-main-container{
+    width: 1250px;
+
+}
+.shop__container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: var(--spancing-36) 0;
+    margin: 0px 230px;
+    
+}
+.space__option{
+    padding: var(--spancing-16) auto;
+    display: grid;
+    grid-row-gap:var(--spancing-8);
+}
+.space__min-max{  
+    display: flex;
+    gap: 10px;
+    
+    
+}
+.option__aside{
+    display: flex;
+    max-width: 350px;
+    max-height: 500px;
+}
+.form__aside{
+    padding: var(--spancing-36);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spancing-24);
+    
+}
+.title__aside{
+    font-family: var(--base-font);
+    font-weight: 700;
+    font-size: var(--font-small);
+}
+.input__aside{
+    font-family: var(--base-font);
+    font-weight: 500;
+    font-size: var(--font-xsmall);
+    border-radius: 50px;
+    border-color: 2px solid black;
+}
+.input-short__aside{
+    font-family: var(--base-font);
+    font-weight: 500;
+    font-size: var(--font-xsmall);
+    border-color: black var(--dark-solid);
+    max-width: 40px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.second-title_aside{
+    font-family: var(--base-font);
+    font-weight: 700;
+    font-size: var(--font-xsmall);
+
+}
+.filter-aside{
+    display: grid;
+    grid-template-columns: 15% 85%;
+    max-width: 250px;
+    justify-content: center;
+    grid-row-gap: 25px;
+    padding-top: var(--spancing-20);
+    
+}
+/* ITEM CSS*/
+
+/* First card*/
+.item-card-item__small-title{
+    font-size: var(--font-small);
+    font-weight: 500;
+}
+.item-collection__title{
+    font-family: var(--alternative-font);
+    font-size: var(--font-display);
+    font-weight: 700;
+}
+.item-collection__text{
+    font-family: var(--alternative-font);
+    font-size: var(--font-large);
+    font-weight: 400;
+    padding-bottom: var(--spancing-20);
+}
+.item-card-item__price{
+    font-size: var(--font-jumbo);
+    font-weight: 700;
+}
+
+/*Carrito*/
+.title_carrito{
+    font-family: var(--alternative-font);
+    font-size: var(--font-display);
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-thickness: 5px;
+    padding: 0px 0px 8px 0px ;
+    
+}
+.title_detalles{
+    margin-top: 20px;
+    display: flex;
+    flex-direction:row;
+    gap: 200px;
+    
+}
+
+/*Login*/
+.container-form{
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 600px;
+    border-radius: 3px;
+    padding-top: 150px;
+    margin: 0 auto;
+    align-items: center;
+    
+    
+}
+.login_h1{
+    text-transform: uppercase;
+    font-size: var(--font-display);
+    font-weight: 700;
+    font-family: var(--alternative-font);
+}
+.container__login{
+    margin-top: 30px;
+    margin-left: 50px;
+    width: 390px;
+    height: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.container__login input[type="submit"] {
+    background-color:  #FF3333;
+    cursor: pointer;
+    border: none;
+    border-radius: 0;
+    padding: 10px 20px;
+    margin-left: 40px;
+    color: white;
+    font-family: var(--base-font);
+    font-weight: 400;
+    font-size: var(--font-small);
+}
+.container__login input[type="checkbox"] {
+    
+    border: 2px solid black;
+
+}
+.login__label{
+    font-size: var(--font-large);
+    font-family: var(--base-font);
+    width: 150px;
+    text-align: left;
+    padding-right: 10px;
+    font-weight: 400;
+}
+.login__label-short{
+    font-size: var(--font-medium);
+    font-family: var(--base-font);
+    width: 150px;
+    text-align: left;
+    padding-right: 10px;
+    font-weight: 400;
+    margin-left: 5px;
+}
+.login__input{
+    font-size: var(--font-small);
+    font-family: var(--base-font);
+    flex: 1;
+    margin-left: 20px;
+    border: none;
+    border-bottom: 2px solid var(--primary-solid);
+    font-weight: 400;
+    
+}
+.login-item__forget{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--font-xsmall);
+    color: var(--secondary-solid);
+    font-weight: 700;
+    margin-top: 10px;
+    
 }
