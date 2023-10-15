@@ -36,15 +36,15 @@
     --font-xsmall:1.4em;
 
     /* Spacings */
-    --spancing-128: 12.8rem;
-    --spancing-68: 6.8rem;
-    --spancing-36: 3.6rem;
-    --spancing-28: 2.8rem;
-    --spancing-24: 2.4rem;
-    --spancing-20: 2rem;
-    --spancing-16: 1.6rem;
-    --spancing-12: 1.2rem;
-    --spancing-8: 0.8rem;
+    --spacing-128: 12.8rem;
+    --spacing-68: 6.8rem;
+    --spacing-36: 3.6rem;
+    --spacing-28: 2.8rem;
+    --spacing-24: 2.4rem;
+    --spacing-20: 2rem;
+    --spacing-16: 1.6rem;
+    --spacing-12: 1.2rem;
+    --spacing-8: 0.8rem;
     
 }
 *,
@@ -90,7 +90,7 @@ img{
 
 header{
     background-color: var(--dark-bg-solid);
-    padding: var(--spancing-36);
+    padding: var(--spacing-36);
 }
 .navbar{
     display: flex; /*elementos se compartan de manera flexible*/
@@ -104,11 +104,11 @@ header{
 .navbar__menu{
     display: flex;
     align-items: center;
-    gap: var(--spancing-20);
+    gap: var(--spacing-20);
 }
 .navbar__link{
     font-size: var(--font-medium);
-    padding: var(--spancing-8) var(--spancing-16);
+    padding: var(--spacing-8) var(--spacing-16);
     display: inline-block;
     transition: background .3s ease-in-out;
     position: relative; /* para que los hijos sean relativos al padre*/
@@ -119,7 +119,7 @@ header{
 .with-icon{
     display: flex;
     align-items: center;
-    gap:var(--spancing-8)
+    gap:var(--spacing-8)
 }
 .with-submenu:hover .submenu{ /*Cuando coloco el curso sobre el li tendra un display block*/
     display: block;
@@ -134,7 +134,7 @@ header{
 }
 .submenu__link{
     display: block;
-    padding: var(--spancing-8) var(--spancing-16);
+    padding: var(--spacing-8) var(--spacing-16);
     font-size: var(--font-medium);
     transition: background .3s ease-in-out;
 }
@@ -145,7 +145,7 @@ header{
 /* HERO*/
 .hero{
     background-image: url(../img/funkos-banner.webp) ;
-    padding: var(--spancing-128);
+    padding: var(--spacing-128);
     background-position: top;
     background-size: cover;
     background-attachment: fixed;
@@ -166,7 +166,7 @@ header{
 .hero__content{
     display: flex;
     flex-direction: column;
-    gap: var(--spancing-20);
+    gap: var(--spacing-20);
     align-items: start;
     z-index: 2;
     position: relative;
@@ -186,7 +186,7 @@ header{
     display: inline-block;
     font-size: var(--font-medium);
     background-color: var(--light-bg-solid);
-    padding: var(--spancing-12) var(--spancing-68);
+    padding: var(--spacing-12) var(--spacing-68);
     border-radius: 50px;
     font-weight: 500;
     transition: all 0.3s ease-in-out;
@@ -202,7 +202,7 @@ header{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
-    padding: var(--spancing-16) 0;
+    padding: var(--spacing-16) 0;
 }
 .collection:nth-child(2) .collection__cover{
     order: -1;
@@ -210,7 +210,7 @@ header{
 .collection__content{
     display: flex;
     flex-direction: column;
-    gap: var(--spancing-24);
+    gap: var(--spacing-24);
     align-items: start;
 
 }
@@ -224,14 +224,14 @@ header{
     font-size: var(--font-large);
     font-weight: 400;
     border-bottom: 2px solid var(--primary-solid);
-    padding-bottom: var(--spancing-20);
+    padding-bottom: var(--spacing-20);
 }
 .collection__link{
     display: inline-block;
     font-size: var(--font-medium);
     background-color: var(--dark-bg-solid);
     color: var(--light-font-solid);
-    padding: var(--spancing-16) var(--spancing-36);
+    padding: var(--spacing-16) var(--spacing-36);
     border-radius: 50px;
     font-weight: 500;
     transition: background .3s ease-in-out;
@@ -245,8 +245,8 @@ header{
 .slider{
     display: flex;
     flex-direction: column;
-    gap: var(--spancing-36);
-    margin: var(--spancing-68) auto;
+    gap: var(--spacing-36);
+    margin: var(--spacing-68) auto;
 }
 .slider__title{
     font-family: var(--alternative-font);
@@ -256,7 +256,7 @@ header{
 }
 .slider__items{
     display: flex;
-    gap: var(--spancing-24);
+    gap: var(--spacing-24);
 }
 .card-item__cover{
     display: flex;
@@ -267,7 +267,7 @@ header{
     text-transform: uppercase;
     background-color: var(--primary-solid);
     color: var(--light-font-solid);
-    padding: var(--spancing-8) var(--spancing-12);
+    padding: var(--spacing-8) var(--spacing-12);
     position: absolute;
     right: 0;
 }
@@ -288,8 +288,8 @@ header{
 .card-item__content{
     display: flex;
     flex-direction: column;
-    gap:var(--spancing-12);
-    padding: var(--spancing-16);
+    gap:var(--spacing-12);
+    padding: var(--spacing-16);
 }
 .card-item__license{
     font-size: var(--font-xsmall);
@@ -311,11 +311,11 @@ header{
 /* FOOTER */
 .footer{
     background-color: var(--dark-bg-solid);
-    padding: var(--spancing-68);
+    padding: var(--spacing-68);
 
 }
 .footer_copy{
-    margin-top: var(--spancing-36);
+    margin-top: var(--spacing-36);
     text-align: center;
 }
 /* Animaciones*/
@@ -336,14 +336,14 @@ header{
 .shop__container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: var(--spancing-36) 0;
+    padding: var(--spacing-36) 0;
     margin: 0px 230px;
     
 }
 .space__option{
-    padding: var(--spancing-16) auto;
+    padding: var(--spacing-16) auto;
     display: grid;
-    grid-row-gap:var(--spancing-8);
+    grid-row-gap:var(--spacing-8);
 }
 .space__min-max{  
     display: flex;
@@ -357,10 +357,10 @@ header{
     max-height: 500px;
 }
 .form__aside{
-    padding: var(--spancing-36);
+    padding: var(--spacing-36);
     display: flex;
     flex-direction: column;
-    gap: var(--spancing-24);
+    gap: var(--spacing-24);
     
 }
 .title__aside{
@@ -397,7 +397,7 @@ header{
     max-width: 250px;
     justify-content: center;
     grid-row-gap: 25px;
-    padding-top: var(--spancing-20);
+    padding-top: var(--spacing-20);
     
 }
 /* ITEM CSS*/
@@ -416,7 +416,7 @@ header{
     font-family: var(--alternative-font);
     font-size: var(--font-large);
     font-weight: 400;
-    padding-bottom: var(--spancing-20);
+    padding-bottom: var(--spacing-20);
 }
 .item-card-item__price{
     font-size: var(--font-jumbo);
