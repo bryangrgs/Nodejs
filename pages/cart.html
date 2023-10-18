@@ -83,15 +83,31 @@
                 <iconify-icon icon="charm:circle-cross" class="cross"></iconify-icon>
         </section>
             <h2 class="cart__resumen">RESUMEN</h2>
-        <section class="cart-items__show resumen">
-            <ul class="cart-items__show--list">
-                <li class="cart-items__show--list-item">CANTIDAD DE ELEMENTOS</li>
-                <li class="cart-items__show--list-item">SUBTOTAL</li>
-                <li class="cart-items__show--list-item">ENVIO</li>
-                <hr class="cart-items__show--list__line">
-            <li class="cart-items__show--list-item total">TOTAL</li>
-</ul>
-
+        <section class="cart-tbl resumen cart-items__show">
+            <table class="tbl">
+                <thead></thead>
+                <tbody>
+                  <tr class="cart-tbl__file">
+                    <td class="cart-tbl__item-table">CANTIDAD DE ELEMENTOS</td>
+                    <td class="cart-tbl__item-table--import">3</td>
+                  </tr>
+                  <tr class="cart-tbl__file">         
+                    <td class="cart-tbl__item-table">SUBTOTAL</td>
+                    <td class="cart-tbl__item-table--import">$ 5399,97</td>
+                  </tr>
+                  <tr class="cart-tbl__file">
+                    <td class="cart-tbl__item-table">ENVIO</td>
+                    <td class="cart-tbl__item-table--import">0,00</td>
+                  </tr>
+                  <tr class="">
+                    <td colspan="2"><hr class="cart-tbl__line"></td>
+                  </tr>
+                  <tr class="cart-tbl__file">
+                    <td class="cart-tbl__total">TOTAL</td>
+                    <td class="cart-tbl__total--import">$ 5399,97</td>
+                  </tr>
+                </tbody>
+            </table>
     </section>
     <button class="cart-items__button">IR A PAGAR</button>
     </div>
