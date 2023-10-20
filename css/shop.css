@@ -1,0 +1,127 @@
+.container-split {
+    display: flex;
+    gap: var(--spacing-16);
+    padding: var(--spacing-36);
+  }
+  
+  .filter {
+    width: 350px;
+    height: 493.928px;
+  }
+  .filter-items {
+    display: flex;
+    gap: 4px;
+  }
+  .filter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .form-box {
+    border-radius: 6px;
+    border: 2px solid #30343f;
+    width: 243.034px;
+    height: 44.285px;
+    flex-shrink: 0;
+  }
+  .form-input {
+    color: #b9b9b9;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .form-titles {
+    color: #111;
+    font-family: var(--base-font);
+    font-size: var(--font-large);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .price {
+    max-width: 60px;
+    border-radius: 6px;
+    border: 2px solid var(--dark-bg-solid);
+  }
+  .price-text {
+    color: #111;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 4px;
+  }
+  
+  .split__text {
+    color: var(--dark-solid);
+    font-family: var(--base-font);
+    font-size: var(--font-large);
+    font-style: normal;
+    font-weight: 500;
+  }
+  
+  .price-value {
+    color: var(--dark-solid);
+    font-family: var(--base-font);
+    font-size: var(--font-small);
+    font-style: normal;
+    font-weight: 500;
+  }
+  
+  .checkbox {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    border-radius: 21px;
+    border: 2px solid var(--dark-bg-solid);
+  }
+  
+  .checkbox-text {
+    color: var(--dark-solid);
+    font-family: var(--base-font);
+    font-size: var(--font-medium);
+    font-style: normal;
+    font-weight: 500;
+  }
+  
+  .shop-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: var(--spacing-24);
+  }
+  .pagination {
+    padding: var(--spacing-36);
+  }
+  .pagination__list {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .pagination__item {
+    width: 44px;
+    height: 44px;
+    border-radius: 4px;
+    border: 1px solid #dfe3e8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark-solid);
+    text-align: center;
+    font-family: var(--base-font);
+    font-size: var(--font-small);
+    font-weight: 700;
+  }
+  .pagination__link {
+    border-color: var(--primary-solid);
+  }
+  
+  .chevron-arrows {
+    color: var(--dark-500);
+  }
+  
