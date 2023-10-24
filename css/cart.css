@@ -2,20 +2,8 @@
 @import url("https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css");
 @import url("https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css");
 
-/*SLIDER*/
+ /*CART */
 
-/*FOOTER*/
-
-/*SHOP*/
-
-.item {
-  display:flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  margin:var(--spacing-28) 0 ;
-  gap:var(--spacing-36);
-}
 .cart-show-item{
   margin:var(--spacing-8);
   display: flex;
@@ -42,10 +30,10 @@
   display: flex;
   align-items: center;
   font-size: var(--font-medium);
-  font-weight: 600;
+  font-weight: 400;
   margin-left:auto;
 }
-.cart-show__price::before{
+.cart-show-item__price::before{
   content:"$";
 }
 .show-item__text{
@@ -54,7 +42,7 @@
   font-weight: 400;
   line-height: 29.05px;
 }
-.show-item__price{
+.cart-show-item__price{
   font-weight: 400;
   font-size:var(--font-x-small) ;
 }
@@ -92,7 +80,6 @@
   padding: 8px;
   margin: 5px;
 }
-
 .add__cart .item__submit{
   width:var(--spacing-128);
   background-color: var(--primary-solid);
@@ -104,11 +91,9 @@
   width: 105px;
   font-size: 16px;
 } 
- /* ---------Carrito------------- */
 .cart__title ,  .cart__resumen{
   display: inline-flex;
   text-decoration:underline solid var(--primary-solid);
-  text-underline-offset: var(--spacing-12);
   font-family: var(--alternative-font);
   font-weight: 700;
   padding: 0 var(--spacing-8) ;
@@ -129,6 +114,7 @@
 }
 .grid-items__head , .cart-items__show{
   display:flex;
+  justify-content: space-around;
   background-color: var(--ligth-bg-solid);
   gap: var(--spacing-8);
   border-radius: 10px;
@@ -148,21 +134,11 @@
   font-weight: 700;
   padding: var(--spacing-16);
 }
-.item__input__cart{
-  font-size: var(--font-medium);
-  font-weight: 700;
-  padding:var(--spacing-8) ;
-  width: var(--spacing-68);
-  border-radius: 2px;
-  border-color: var(--dark-300);
-  text-align: center;
-}
 .cart-detalle{
   display:inline-flex;
   align-items: center;
 }
 .cross{
-  font-size:var(--font-large);
   color: var(--primary-solid);
   display:inline-flex;
   justify-content: flex-end;
@@ -180,8 +156,6 @@ margin-left: 60%;
 }
 .cart-items__show--list-item{
   margin: var(--spacing-16);
-  font-size:var(--font-xsmall);
-  font-weight: 600;
 }
 .cart-items__show--list-item .total {
   font-weight:700;
@@ -205,4 +179,7 @@ margin-left: 60%;
    @media screen and (max-width:950px) and (min-width:620px) {
   .card-item__name{
       min-height: 42px;
-    }} 
+    }
+.cart-show-item{
+    align-items: center;
+}} 
