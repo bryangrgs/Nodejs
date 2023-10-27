@@ -1,105 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shop | Funkoshop</title>
-    <link rel="stylesheet" href="../css/index.css" />
-    <link rel="stylesheet" href="../css/shop.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="navbar container">
-        <picture class="navbar__logo">
-          <a href="./index.html">
-            <img src="../img/branding/logo_light_horizontal.svg" alt="logo" />
-          </a>
-        </picture>
-        <ul class="navbar__menu">
-          <li class="navbar__item with-submenu">
-            <a class="navbar__link with-icon" href="../pages/shop.html"
-              >SHOP <iconify-icon icon="mdi:chevron-down"></iconify-icon
-            ></a>
-            <ul class="submenu">
-              <li class="submenu__item">
-                <a href="" class="submenu__link">Funkos</a>
-              </li>
-              <li class="submenu__item">
-                <a href="" class="submenu__link">Remeras</a>
-              </li>
-              <li class="submenu__item">
-                <a href="" class="submenu__link">LLaveros</a>
-              </li>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | FunkoShop</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+      
+    <header>  <!-- INICIO HEADER-->
+        <nav class="navbar container">
+            <picture class="navbar__logo">
+                <a href="./index.html">
+                <img src="../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la Marca Funkoshop">
+                </a>
+            
+            </picture>
+           
+            <ul class="navbar__menu">
+                <li class="navbar__item with-submenu">
+                    <a class="navbar__link with-icon"  href="./pages/shop.html">SHOP<iconify-icon icon="ion:chevron-down"></iconify-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Funkos</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Remeras</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Llaveros</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="navbar__link"  href="./pages/contact.html">CONTACTO</a>
+                </li class="navbar__item">
+                <li  class="navbar__item">
+                    <a class="navbar__link"  href="./pages/login.html">LOGIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a  class="navbar__carrito" href="./pages/cart.html">
+                        <img src="../img/icons/cart-icon.svg" alt="icono de carrito"> </a>
+                </li>
             </ul>
-          </li>
-          <li class="navbar__item">
-            <a class="navbar__link" href="./pages/contact.html">CONTACTO</a>
-          </li>
-          <li class="navbar__item">
-            <a class="navbar__link" href="./login.html">LOGIN</a>
-          </li>
-          <li class="navbar__item">
-            <a class="navbar__cart" href="./pages/cart.html"
-              ><img src="../img/icons/cart-icon.svg" alt="icono del carrito"
-            /></a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <div class="container-split">
-      <aside class="filter">
-        <form class="filter-form" action="">
-          <div>
-            <label class="form-titles" for="search">BUSCAR</label>
-            <input
-              class="form-box form-input"
-              type="text"
-              name=""
-              id="search"
-              placeholder=" item o categorias"
-            />
-          </div>
-          <br />
-          <label class="form-titles" for="sort">ORDENAR POR</label>
-          <select class="form-box form-input" name="filter" id="sort">
-            <option value="" disabled selected hidden>Mayor a menor</option>
-            <option value="coffe">menor a mayor precio</option>
-            <option value="tea">mayor a menor precio</option>
-          </select>
-          <br />
-          <h3 class="form-titles">PRECIO</h3>
-          <br />
-          <div>
-            <label class="price-text" for="min">MIN</label>
-            <input class="price" type="number" name="" id="min" />
-            <label class="price-text" for="max"> - MAX</label>
-            <input class="price" type="number" name="" id="max" />
-          </div>
-          <br />
-          <h2 class="form-titles">FILTRAR</h2>
-          <br />
-          <div class="filter-items">
-            <input class="checkbox" type="checkbox" name="" id="checkbox-nuevos" />
-            <label class="checkbox-text" for="checkbox-nuevos">NUEVOS</label>
-          </div>
-          <br />
-          <div class="filter-items">
-            <input class="checkbox" type="checkbox" name="" id="checkbox-ofertas" />
-            <label class="checkbox-text" for="checkbox-ofertas">OFERTAS</label>
-          </div>
-          <br />
-          <div class="filter-items">
-            <input class="checkbox" type="checkbox" name="" id="checkbox-edicion" />
-            <label class="checkbox-text" for="checkbox-edicion"
-              >EDICION ESPECIAL</label
-            >
-          </div>
-          <br />
-          <div class="filter-items">
-            <input class="checkbox" type="checkbox" name="" id="checkbox-fav" />
-            <label class="checkbox-text" for="checkbox-fav">FAVORITOS</label>
-          </div>
+        </nav>
+    </header> <!-- FIN HEADER-->
+    <div class="shop__container">
+    <aside class="option__aside">
+        <form class="form__aside">
+        <div class="space__option">
+                 <label class="title__aside" for="fname">Buscar</label>  
+                 <input class="input__aside" placeholder="item o categoria" type="text" id="fname" name="fname">
+         </div>  
+         <div class="space__option">
+            <label  class="title__aside" for="fname">Ordernar Por</label> 
+            
+            <select  class="input__aside"  name="mayormenor" id="">
+                
+                <option value="mayorprecio">Mayor precio</option>
+                <option value="menorprecio">Menor precio</option>
+            
+                
+            </select>
+         </div>
+         <div class="space__option">
+            <h4  class="title__aside"> PRECIO</h4>
+            <div class="space__min-max">
+            <label class="second-title_aside" for="">MIN</label>
+            <input  class="input-short__aside" placeholder="0" type="text" id="fname" name="fname">
+            <P> - </P>
+            <label class="second-title_aside" for="">MAX</label>
+            <input  class="input-short__aside" placeholder="0" type="text" id="fname" name="fname">
+        </div>
+         </div>
+         <div >
+            <h4 class="title__aside">FILTRAR</h4>
+            <section class="filter-aside">
+                <input  type ="checkbox">
+                <label class="second-title_aside">nuevos</label>
+    
+                <input  type ="checkbox">
+                <label class="second-title_aside">ofertas</label>
+
+                <input  type ="checkbox">
+                <label class="second-title_aside">edicion especial</label>
+
+
+                <input  type ="checkbox">
+                <label class="second-title_aside">favoritos</label>
+            </section>
+                
+            
+         </div>
+        
         </form>
       </aside>
       <main>
