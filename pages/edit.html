@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | FunkoShop</title>
+    <title>Edit | FunkoShop</title>
     <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css//login.css">
-
+    
+    <link rel="stylesheet" href="../css/edit.css">
 </head>
 <body>
 <header>  <!-- INICIO HEADER-->
@@ -33,6 +33,74 @@
 
     </nav>
 </header> <!-- FIN HEADER-->
+<main class="main-container">
+    <h1 class="edit__title__product">Editar item</h1>
+    <form class="edit__container-form" >
+        <div class="container__edit">
+            <label class="edit__label__product"    for="fname">Categoria:</label> 
+                <select class="edit__select__product"    name="mayormenor" id="">
+                    <option   value="mayorprecio">Figuras</option>
+                    <option  value="menorprecio">Otro</option>
+                  
+                </select>
+
+            <label class="edit__label2__product"   for="fname">Licencia:</label> 
+                <select class="edit__select__product"    name="mayormenor" id="">
+                    <option   value="mayorprecio">Naruto Shippuden</option>
+                    <option   value="menorprecio">Otro+</option>
+                  
+                </select>
+            
+        </div>
+ 
+        <div class="container__edit">
+            <label class="edit__label__product"  for="fname">Nombre del producto:</label>
+            <input class="edit__input__cat2" placeholder="Kakashi Hatake Shippuden Saga">
+        </div>
+        <textarea class="edit__textarea__product" cols="50" rows ="10" maxlength="100"></textarea>
+        <div class="container__edit">
+            <label class="edit__label__product" for="fname">SKU:</label>
+            <input class="edit__input__cat" placeholder="NAR001012">
+            <label class="edit__label__product" for="fname">Precio:</label>
+            <input class="edit__input__cat" placeholder="$1.799,00">
+            <label class="edit__label__product" for="fname">Stock:</label>
+            <input class="edit__input__cat" placeholder="10">
+        </div>
+        <div class="container__edit">
+            <label class="edit__label__product" for="fname">Descuento:</label>
+            <input class="edit__input__cat" placeholder="10%">
+            <label class="edit__label__product" for="fname">Cuotas:</label>
+            <select class="edit__select__product"    name="mayormenor" id="">
+                <option value="mayorprecio">6 coutas sin interés</option>
+                <option value="menorprecio">Otro+</option>
+            </select>
+            
+        </div>
+        <div class="container__edit">
+            <label class="edit__label__product">Imagenes:</label>
+            <input type="file" id="uploadBtn">
+            <label for="uploadBtn" class="edit__label__submit"><i class="fa-solid fa-upload"></i> Upload  File</label>
+        </div>
+        <div class="edit_container_img">
+        <div class="container__edit__text">
+        
+            <img class="edit__img__product" src="../img/star-wars/luke-1.webp">
+            <p class="edit__text__detail">Frente</p>
+        
+        </div>
+        <div class="container__edit__text"> 
+            <img class="edit__img__product" src="../img/star-wars/luke-box.webp">
+            <p class="edit__text__detail">Dorso</p>
+        </div>
+    </div>
+
+        <div class="container__edit">
+            <input type="submit" value="Modificar producto">
+        
+        </div>
+</main>
+
+</form>
 <footer class="footer">
         
     <nav class="navbar container">
@@ -53,6 +121,7 @@
     </nav>
     
 
-<P class="footer_copy">All rights reserved 2023 - Funkoshop &copy;</P>
+<P class="footer__copy">All rights reserved 2023 - Funkoshop &copy;&</P>
 </footer>
+
 </body>

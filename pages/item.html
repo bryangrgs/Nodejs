@@ -62,7 +62,7 @@
         <p class="item__price">$1799,99</p>
         <div class="item__cart">
           <button id="subtract" class="item__quantity" type="button">-</button>
-          <input class="item__input" type="text" name="" id="quantity" placeholder="0">
+          <input class="item__input" type="text" name="quantify" id="quantify" placeholder="0">
           <button id="add" class="item__quantity" type="button">+</button>
           <button class="item__submit btn btn--primary btn--medium" type="submit">Agregar al carrito</button>
         </div>
@@ -174,23 +174,8 @@
 
   <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-  <script>
-    new Glide('.glide', {
-      type: 'carousel',
-      startAt: 0,
-      perView: 3,
-      gap: 30,
-      breakpoint: {
-        991: {
-          perView: 2
-        },
-        768: {
-          perView: 1
-        }
-      }
-    }).mount();
-  </script>
-  <script src="../javascript/"></script>
+  <script src="../js/glide.js"></script>
+  <script src="../js/item.js"></script>
 
 </body>
 

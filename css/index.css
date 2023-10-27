@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;900&family=Raleway:wght@100;300;400;500;600;700;900&display=swap');
-
-
+@import url("https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css");
+@import url("https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css");
 :root { /** Definir variable en css  selector root**/
     /* Palette*/
     --primary-solid: #FF3333;  /** Para declarar variable se comienza con --(nombre que quiera escribir):**/
@@ -254,10 +254,7 @@ header{
     text-transform: uppercase;
 
 }
-.slider__items{
-    display: flex;
-    gap: var(--spacing-24);
-}
+
 .card-item__cover{
     display: flex;
     position: relative;
@@ -308,13 +305,26 @@ header{
     color: var(--secondary-solid);
     font-weight: 700;
 }
+iconify-icon{
+    color: var(--dark-bg-solid);
+    font-size: var(--font-small);
+    font-weight: 700;
+}
+.glide__arrow--left{
+    left: 0;
+    
+}
+.glide__arrow--right{
+    right: 0;
+    
+}
 /* FOOTER */
 .footer{
     background-color: var(--dark-bg-solid);
     padding: var(--spacing-68);
 
 }
-.footer_copy{
+.footer__copy{
     margin-top: var(--spacing-36);
     text-align: center;
 }
@@ -423,21 +433,3 @@ header{
     font-weight: 700;
 }
 
-/*Carrito*/
-.title_carrito{
-    font-family: var(--alternative-font);
-    font-size: var(--font-display);
-    font-weight: 700;
-    text-decoration: underline;
-    text-decoration-color: red;
-    text-decoration-thickness: 5px;
-    padding: 0px 0px 8px 0px ;
-    
-}
-.title_detalles{
-    margin-top: 20px;
-    display: flex;
-    flex-direction:row;
-    gap: 200px;
-    
-}

@@ -1,1 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;900&family=Raleway:wght@100;300;400;500;600;700;900&display=swap');
+
+
+:root { /** Definir variable en css  selector root**/
+    /* Palette*/
+    --primary-solid: #FF3333;  /** Para declarar variable se comienza con --(nombre que quiera escribir):**/
+    --primary-900: rgb(255, 51, 51,0.9); /* 0.9 transparencia del mismo color de arriba*/
+    --primary-500: rgb(255, 51, 51,0.5);
+    --primary-300: rgb(255, 51, 51,0.3);
+
+    --secondary-solid: #1d84b5;
+    --secondary-900: rgb(29, 132, 181,0.9);
+    --secondary-500: rgb(29, 132, 181,0.5);
+    --secondary-300: rgb(29, 132, 181,0.3);
+
+    --dark-solid: #1F1F1F;
+    --dark-900:  rgb(31, 31, 31,0.9);
+    --dark-600:  rgb(31, 31, 31,0.5);
+    --dark-300:  rgb(31, 31, 31,0.3);
+
+    --dark-bg-solid: #30343F;
+    --light-bg-solid: #FAFAFF;
+    --light-font-solid: #FFFFFF;
+
+    /*Typography*/
+    --base-font: 'Inter', sans-serif;
+    --alternative-font: 'Raleway', sans-serif;
+
+    /* Font-size */
+    --font-display: 4.6em;
+    --font-jumbo: 3.8em;
+    --font-xlarge: 3em;
+    --font-large: 2.4em;
+    --font-medium: 1.8em;
+    --font-small: 1.6em;
+    --font-xsmall:1.4em;
+
+    /* Spacings */
+    --spacing-128: 12.8rem;
+    --spacing-68: 6.8rem;
+    --spacing-36: 3.6rem;
+    --spacing-28: 2.8rem;
+    --spacing-24: 2.4rem;
+    --spacing-20: 2rem;
+    --spacing-16: 1.6rem;
+    --spacing-12: 1.2rem;
+    --spacing-8: 0.8rem;
+    
+}
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: var(--base-font);
+    font-size: 62.5%;
+    color: var(--dark-solid);
+}
+
+a{
+    text-decoration: none;
+    
+    font-family: inherit;
+    color: inherit; /** Tomar color heredado**/
+}
+
+header,footer{
+    font-family: var(--alternative-font);
+    color: var(--light-font-solid);
+}
+ul,ol{
+    list-style-type: none;
+    
+}
+p{
+    font-size: 1.8em;
+}
+img{
+    width: 100%;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
 /* EDIT*/
+.main-container{
+   margin: 0 auto;
+}
+.edit__container-form{
+    
+    flex-direction: column;
+    border-radius: 3px;
+    width: 1200px;
+    padding-left: var(--spacing-68);
+    
+    
+}
+.edit__title__product{
+    font-family: var(--alternative-font);
+    font-weight: 700;
+    font-size: var(--font-jumbo);
+    text-align: left;
+    padding-left: var(--spacing-68);
+}
+.edit__select__product{
+    border-color: #1F1F1F;
+    
+    width: 150px;
+    margin-left: var(--spacing-12);
+    border-radius: 6px;
+    
+
+}
+.edit_container_img{
+    display: flex;
+    justify-content: space-around;
+    max-width: 500px;
+}
+
+.edit__img__product{
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    border-bottom: 2px solid var(--primary-solid);
+}
+.edit__label__product{
+    color: black;
+    font-family: var(--base-font);
+    font-weight: 400;
+    font-size: var(--font-medium);
+}
+.edit__label2__product{
+    margin-left: var(--spacing-12);
+    font-family: var(--base-font);
+    font-weight: 300;
+    font-size: var(--font-large);
+}
+.edit__input__cat{
+    margin-left: 5px;
+    color: black;
+    text-decoration:underline solid var(--primary-solid);
+    border: none;
+    font-family: var(--base-font);
+    font-weight: 400;
+    font-size: var(--font-small);
+    width: 200px;
+    
+}
+.edit__input__cat2{
+    margin-left: 5px;
+    color: black;
+    text-decoration:underline solid var(--primary-solid);
+    border: none;
+    font-family: var(--base-font);
+    font-weight: 400;
+    font-size: var(--font-small);
+    width: 300px;
+    
+}
+input[type="file"]{
+    display: none;
+}
+.edit__label__submit{
+    margin-left: var(--spacing-8);
+    display: inline-block;
+    text-transform: uppercase;
+    color: white;
+    background-color: brown;
+    text-align: center;
+    padding: 5px 5px;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    user-select: none;
+    cursor: pointer;
+    box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.35);
+    border-radius: 3px;
+}
+.edit__label__submit i{
+    font-size: 20px;
+    margin-right: 5px;
+}
+.edit__label__submit:active{
+    transform: scale(0.9);
+}
+.edit__textarea__product{
+    width: 300px;
+    height: 150px;
+}
+.container__edit{
+    
+    margin-top: 30px;
+    width: 800px;
+    height: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.container__edit__text{
+   text-align: center;
+    flex: 1;
+}
+.container__edit__text img{
+   width: 200px
+ }
+.edit__text__detail{
+    
+    margin-top: 10px;
+}
+
+
+.container__edit input[type="submit"] {
+    background-color:  #FF3333;
+    cursor: pointer;
+    border: none;
+    border-radius: 0;
+    padding: 10px 20px;
+    color: white;
+    font-family: var(--base-font);
+    font-weight: 400;
+    font-size: var(--font-small);
+}
