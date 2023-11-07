@@ -1,0 +1,81 @@
+.admin__container{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: var(--spacing-20) auto;
+    align-items: flex-start;
+  }
+  .admin__search{
+    padding: var(--spacing-8);
+    width: 35%;
+   display: flex;
+  }
+  .search-icon{
+    font-size: var(--font-large);
+    width: 15%;
+    padding: var(--spacing-8);
+  }
+  .search-input{
+    padding: var(--spacing-8);
+    color: var(--dark-bg-solid);
+    border: 1px solid black;
+    border-radius: 2px;
+    width:85%;
+    margin: var(--spacing-8);
+  }
+  .tbl__title{
+    font-size: var(--font-jumbo);
+    margin: var(--spacing-16) 35% var(--spacing-16) 0 ;
+  }
+ .tbl__items{
+    margin:var(--spacing-36) 5%;
+    width: 100%;
+ }
+  .tbl__head{
+    margin: var(--spacing-20);
+  }
+  .tbl__row>th{
+    text-align: left;
+    font-weight: 900;
+  }
+  .tbl__item{
+    font-size: var(--font-medium);
+    padding: var(--spacing-12) ;
+    margin: 0 var(--spacing-8) ;
+    font-weight: 600;
+  }
+  .tbl__col__title{
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-end;
+    align-items: center;
+    margin: var(--spacing-36) ;
+    width: 92%;
+    justify-content: space-between;
+  } 
+  #tbl__insert-item{
+    font-weight: 700;
+    width:var(--spacing-128);
+    margin: 0 0 0 var(--spacing-128) ;
+
+  }
+  .tbl__icon__pencil iconify-icon{ 
+    color: var(--secondary-solid);
+    font-size: var(--font-xsmall);
+    margin: 0 var(--spacing-16) ;
+    cursor: pointer;
+  }
+  .tbl__item.tbl__icon__pencil{
+    text-align: right;
+  }
+  .tbl__icon__trash iconify-icon,  .tbl__icon__add{ 
+    color: var(--primary-solid);
+    font-size: var(--font-xsmall);
+    margin: 0 var(--spacing-24);
+    align-items:flex-end;
+    cursor: pointer;
+  }
+  .tbl__icon__add{
+    font-size: var(--font-large);
+  }
+  

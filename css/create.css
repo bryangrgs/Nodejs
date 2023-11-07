@@ -1,0 +1,168 @@
+/*edicion del formulario */
+.formu{
+    max-width:900px;
+   }
+
+.crear-nuevo-item{
+    font-size: 4.2em;
+    font-weight: 700;
+    font-family:var(--alternative-font);
+    text-align: left;
+    padding-top:var(--spacing-36 );
+    padding-bottom: var(--spacing-36 );
+}
+
+/*categoria y licencia*/
+.formu__div__selectores{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: var(--spacing-16);
+    margin-bottom:var(--spacing-36) ;
+    font-weight: 700;
+}
+
+.form__label__1{
+    width: 125px;
+    height: 29px;
+    font-family:var(--base-font);
+    font-weight:380;
+    font-size:var(--font-large);
+    color: var(--dark-solid);
+}
+
+.form__label__selec{
+    width: 243.03px;
+    height: 44.28px;
+    border: 2px solid var(--dark-solid);
+    border-radius: 6px;
+    font-size:var(--font-large);
+    color: #B9B9B9;
+}
+
+.div__cyl{
+    display: flex ;
+    align-items: center;
+    gap: 5px;
+}
+
+/* nom del producto*/
+.formu__div__producto{
+   margin-top: var(--spacing-20);
+   margin-bottom: var(--spacing-20); 
+}
+
+.form__label{
+    font-family:var(--base-font);
+    font-weight:400;
+    font-size:var(--font-large);
+    color: var(--dark-solid);
+}
+
+.form__inpu__producto{
+    font-size:var(--font-large) ;
+    font-family:var(--base-font) ;
+    border: none;
+    border-bottom: 2px solid var(--primary-solid);
+}
+
+/*cuadro de texto*/
+.formu__div__txt{
+    margin-top:var(--spacing-20) ;
+    margin-bottom: var(--spacing-28);
+    height: 194.83;
+    border: 1 solid var(--dark-solid);
+    border-radius: 4px;
+}
+
+.div__txt{
+    color: #B9B9B9;
+    font-family:var(--base-font);
+    font-weight: 400;
+    font-size:var(--font-medium);
+    width: 100%;
+}
+
+/* nom del producto, sku, precio, stock*/
+.formu__div__sps{
+    display: flex;
+    justify-content: space-between;
+    margin-top:var(--spacing-20) ;
+    margin-bottom: var(--spacing-28);
+    
+}
+
+.form__label__sps{
+    font-family:var(--base-font);
+    font-weight:400;
+    font-size:var(--font-large);
+    color: var(--dark-solid);
+    align-items: center;
+}
+
+.form__input{
+    font-size:var(--font-large) ;
+    font-family:var(--base-font) ;
+    border: none;
+    border-bottom: 2px solid var(--primary-solid);
+
+}
+
+/*descuento, cuotas*/
+.formu__div__dc{
+    display: flex;
+    margin-top:var(--spacing-28) ;
+    margin-bottom: var(--spacing-28);
+    align-items: center;
+    justify-content:left;
+    gap: 150px;
+
+}
+
+.form__label__dc{
+    font-family:var(--base-font);
+    font-weight:400;
+    font-size:var(--font-large);
+    color: var(--dark-solid);
+}
+
+
+
+
+
+/*imagenes*/
+.formu__div__img{
+    margin-top:var(--spacing-20) ;
+    margin-bottom: var(--spacing-28);
+}
+
+
+/*botones */
+.formu__div__botones{
+    display: flex;
+    gap: var(--spacing-28);
+    margin-top: var(--spacing-20);
+    margin-bottom: var(--spacing-68);
+}
+
+.form__boton__1{
+    display: inline-block;
+    background-color: var(--primary-solid);
+    color: var(--light-font-solid);
+    font-size:var(--font-medium) ;
+    font-family:var(--base-font) ;
+    padding: var(--spacing-12) var(--spacing-28);
+    justify-content: left;
+    border:none;
+}
+
+.form__boton__2{
+    display: inline-block;
+    background-color: var(--primary-solid);
+    color: var(--light-font-solid);
+    font-size:var(--font-medium) ;
+    font-family:var(--base-font) ;
+    padding: var(--spacing-12) var(--spacing-68);
+    justify-content: left;
+    border:none;
+}

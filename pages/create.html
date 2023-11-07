@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create |Funkoshop</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/create.css">
+    <link rel="stylesheet" href="../css/edit.css">
+</head>
+<body>
+<!--inicio del header-->
+<header>
+    <nav class="navbar container">
+     <picture class="navbar__logo">
+      <a href="../../index.html">
+          <img src="../../img/branding/logo_light_horizontal.svg" alt="isologotipo de la marca funkoshop">
+      </a>
+     </picture>
+
+     <ul class="navbar__menu">
+          <li class="navbar__item">
+             <a class="navbar__link" href="../pages/shop/">VER TIENDA</a>
+         </li>
+          <li class="navbar__item">
+             <a class="navbar__link" href="../pages/admin/">ADMIN</a>
+          </li>
+          <li class="navbar__item">
+             <a class="navbar__link" href="../pages/">SALIR</a>
+          </li>
+     </ul>
+    </nav>
+ </header>
+<!--fin del header-->
+<!--inicio del formulario-->
+<div class="container">
+    <form class="formu">
+      <h3 class="crear-nuevo-item">CREAR NUEVO ITEM</h3>
+ 
+     <div class="formu__div__selectores">  
+         <div class="div__cyl">     
+           <label for="categoria" class="form__label__1" >Categoría:</label> 
+            <select  id="categoria" name="categoria" placeholder="Seleccionar" class="form__label__selec">
+            <option value="selec">seleccionar</option>
+            <option value="selec1">seleccionar1</option>
+            <option value="selec2">seleccionar2</option>
+            </select>
+         </div>
+         <div class="div__cyl">
+           <label for="licencia" class="form__label__1" >Licencia:</label>  
+           <select id="licencia" name="licencia" placeholder="seleccionar" class="form__label__selec">
+            <option value="selec">seleccionar</option>
+            <option value="selec1">seleccionar1</option>
+            <option value="selec2">seleccionar2</option>
+           </select>
+        </div> 
+     </div>  
+ 
+     <div class="formu__div__producto">  
+     <label for="mensaje" class="form__label" class="form__mensaje">Nombre del producto:</label>
+     <input class="form__inpu__producto"   type="text" placeholder="Kakashi Hatake Shippuden Saga" size="24">
+     </div>
+ 
+     <div class="formu__div__txt">
+     <textarea class="div__txt" name="mensaje" id="mensaje" cols="150" rows="10" placeholder=" Descripción del producto"></textarea><br>
+     </div>
+ 
+     <div class="formu__div__sps">
+        <div>  
+           <label for="sku" class="form__label__sps">SKU:</label>
+           <input  class="form__input" type="text" name="sku" id="sku" placeholder="SSK111AB001" size="8">
+        </div>
+        <div> 
+            <label for="precio" class="form__label__sps">Precio:</label>
+            <input class="form__input" type="text" name="precio" id="precio" placeholder="$0.000,00" size="8">
+        </div>
+        <div>
+            <label for="stock" class="form__label__sps">Stock:</label>
+            <input class="form__input" type="text" name="stock" id="stock" placeholder="0" size="1">
+        </div>
+     </div>
+ 
+     <div class="formu__div__dc">
+        <div>
+            <label for="descuentos" class="form__label__dc">Descuento:</label>
+            <input class="form__input" type="text" name="descuentos" id="descuentos" placeholder="0%" size="1">
+        </div>
+        <div>
+            <label for="cuotas" class="form__label__dc">Cuotas:</label> 
+            <select  id="cuotas" name="cuotas" class="form__label__selec">
+            <option>3 Cuotas sin interés</option>
+            <option>1 Cuotas sin interés</option>
+            <option>6 Cuotas sin interés</option>
+            </select>
+        </div>
+    </div>
+ 
+     
+    <div class="container__edit">
+        <label class="edit__label__product">Imagenes:</label>
+        <input type="file" id="uploadBtn">
+        <label for="uploadBtn" class="edit__label__submit"><i class="fa-solid fa-upload"></i> Upload  File</label>
+    </div>
+
+     <div class="formu__div__botones">
+ 
+        <input class="form__boton__1" type="submit" value="Agregar producto">
+        <input class="form__boton__2" type="reset" value="Limpiar">
+        </div>
+ 
+ </form>
+ </div>
+ 
+<!-- inicio del footer -->
+<footer class="footer">
+    <nav class="navbar container">
+          <ul class="navbar__item">
+              <li class="navbar__item">
+                  <a class="navbar__link" href="../pages/shop/shop.html">SHOP</a>
+              </li>
+              <li class="navbar__item">
+                  <a class="navbar__link" href="../pages/admin/register.html">REGISTRARSE</a>
+              </li>
+              <li class="navbar__item">
+                  <a class="navbar__link" href="../pages/admin/login.html">LOGIN</a>
+              </li>
+              <li class="navbar__item">
+                  <a class="navbar__link" href="../pages/admin/">CONTACTO</a>
+              </li>
+          </ul>
+          <Picture>
+             <img src="../../img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
+          </Picture>
+     </nav>
+     <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+</footer>  
+<!-- fin del footer -->  
+<script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script><!--libreria iconify-->
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+<script src="../js/glide.js"></script>
+</body>
+</html>

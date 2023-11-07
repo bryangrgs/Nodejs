@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../../css/admin.css">
+
+
+    <title>Admin | Funkoshop</title>
+</head>
+<body>
+<header>
+    <nav class="navbar container"> 
+        <picture class="navbar__logo"><a href="../../index.html">
+            <img src="../../img/branding/logo_light_horizontal.svg"  alt="Isologotipo de la marca Funkoshop"></a></picture>
+            <ul class="navbar__menu">
+                <li class="navbar__item"><a class="navbar__link" href="../../pages/shop.html">VER TIENDA</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="../../pages/admin/login.html">ADMIN</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="#">SALIR</a></li>
+            </ul>
+    </nav>
+</header>  
+    
+    <section class="admin__container">
+    <div class="admin__search">    
+    <iconify-icon icon="mingcute:search-line" class="search-icon"></iconify-icon><input type="search" name="search" class="search-input" placeholder="código, nombre o categoría">
+    </div>
+    <div class="tbl__col__title"><h1 class="tbl__title">LISTADO DE PRODUCTOS</h1>
+    <p id="tbl__insert-item">AGREGAR</p><iconify-icon icon="icon-park-solid:add" class="tbl__icon__add"></iconify-icon></div>
+     
+    <table class="tbl__items">
+        <thead class="tbl__head"></thead>
+    <tr class="tbl__row">
+        <th class="tbl__item">ID</th>
+        <th class="tbl__item">Código</th>
+        <th class="tbl__item">Nombre del Producto</th>
+        <th class="tbl__item">Categoría</th>
+    </tr>
+
+    <tr class="tbl__row">
+        <td class="tbl__item">1</td>
+        <td class="tbl__item">STW0010001</td>
+        <td class="tbl__item">Baby Yoda Blueball</td>
+        <td class="tbl__item">STAR WARS</td>
+        <td class="tbl__item tbl__icon__pencil"><iconify-icon icon="subway:pencil"></iconify-icon></td>
+        <td class="tbl__item  tbl__icon__trash"><iconify-icon icon="iconamoon:trash-fill"></iconify-icon></td>
+
+    </tr>
+    <tr class="tbl__row">
+        <td class="tbl__item">2</td>
+        <td class="tbl__item">STW0010002</td>
+        <td class="tbl__item">Boba Fett Fighter</td>
+        <td class="tbl__item">STAR WARS</td>
+        <td class="tbl__item tbl__icon__pencil"><iconify-icon icon="subway:pencil"></iconify-icon></td>
+        <td class="tbl__item  tbl__icon__trash"><iconify-icon icon="iconamoon:trash-fill"></iconify-icon></td>
+
+    </tr>
+    <tr class="tbl__row">
+        <td class="tbl__item">3</td>
+        <td class="tbl__item">STW0010003</td>
+        <td class="tbl__item">Luke Skyllwalker & Grogu</td>
+        <td class="tbl__item">STAR WARS</td>
+        <td class="tbl__item tbl__icon__pencil"><iconify-icon icon="subway:pencil"></iconify-icon></td>
+        <td class="tbl__item  tbl__icon__trash"><iconify-icon icon="iconamoon:trash-fill"></iconify-icon></td>
+
+    </tr>
+    <tr class="tbl__row">
+        <td class="tbl__item">4</td>
+        <td class="tbl__item">STW0010004</td>
+        <td class="tbl__item">Stormtrooper Lightsaber</td>
+        <td class="tbl__item">STAR WARS</td>
+        <td class="tbl__item tbl__icon__pencil"><iconify-icon icon="subway:pencil"></iconify-icon></td>
+        <td class="tbl__item  tbl__icon__trash"><iconify-icon icon="iconamoon:trash-fill"></iconify-icon></td>
+
+    </tr>
+    <tr class="tbl__row">
+        <td class="tbl__item">5</td>
+        <td class="tbl__item">STW0010005</td>
+        <td class="tbl__item">Charmander Smiley</td>
+        <td class="tbl__item">POKEMON</td>
+        <td class="tbl__item tbl__icon__pencil"><iconify-icon icon="subway:pencil"></iconify-icon></td>
+        <td class="tbl__item  tbl__icon__trash"><iconify-icon icon="iconamoon:trash-fill"></iconify-icon></td>
+
+    </tr>
+    <tr class="tbl__row">
+        <td class="tbl__item">6</td>
+        <td class="tbl__item">STW0010006</td>
+        <td class="tbl__item">Dragonite Hi!</td>
+        <td class="tbl__item">POKEMON</td>
+        <td class="tbl__item tbl__icon__pencil"><iconify-icon icon="subway:pencil"></iconify-icon></td>
+        <td class="tbl__item  tbl__icon__trash"><iconify-icon icon="iconamoon:trash-fill"></iconify-icon></td>
+
+    </tr>
+    <tr class="tbl__row">
+        <td class="tbl__item">7</td>
+        <td class="tbl__item">STW0010007</td>
+        <td class="tbl__item">Pidgeotto Flying</td>
+        <td class="tbl__item">POKEMON</td>
+        <td class="tbl__item tbl__icon__pencil"><iconify-icon icon="subway:pencil"></iconify-icon></td>
+        <td class="tbl__item  tbl__icon__trash"><iconify-icon icon="iconamoon:trash-fill"></iconify-icon></td>
+
+    </tr>
+    <tr class="tbl__row">
+        <td class="tbl__item">8</td>
+        <td class="tbl__item">STW0010008</td>
+        <td class="tbl__item">Pikachu Smiley</td>
+        <td class="tbl__item">POKEMON</td>
+        <td class="tbl__item tbl__icon__pencil"><iconify-icon icon="subway:pencil"></iconify-icon-></td>
+        <td class="tbl__item  tbl__icon__trash"><iconify-icon icon="iconamoon:trash-fill"></iconify-icon></td>
+
+    </tr>
+</thead>
+<tr class="tbl__row">
+
+</tr>
+    </table>
+</section>
+<footer class="footer">
+    <nav class="navbar container">
+        <ul class="navbar__items">
+            <li class="navbar__item"><a class="navbar__link" href="../shop.html">SHOP</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="../admin/register.html">REGISTRARSE</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="../admin/login.html">INGRESAR</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="../contact.html">CONTACTO</a></li>
+        </ul>
+        <picture><img src='../../img/branding/isotype.svg' alt='Isotipo Funkoshop' ></picture>
+    </nav>
+    <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+</footer>   
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<script src="../../js/index.js"></script>
+</body>
+</html>
